@@ -2,7 +2,7 @@
 
 ## 1. IR A LA WEB OFICIAL Y DESCARGAR EL ARCHIVO DE LA APP:
 
-[Web](https://www.apachefriends.org/es/download.html)
+- Puedes visitar la web oficial de Xammp [aquí](https://www.apachefriends.org/es/download.html)
 
 
 ![1](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea_instalacion_xamp/1.png)
