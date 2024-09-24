@@ -1,23 +1,19 @@
 # Métodos de Paso de Variables de Formularios: GET y POST
 
-Los formularios en HTML pueden enviar datos al servidor utilizando dos métodos principales: GET y POST. A continuación, se describen ambos métodos y se proporcionan ejemplos.
+Los formularios en HTML pueden enviar datos al servidor utilizando principalmente dos métodos: GET y POST. Depende del uso de l apágina web, puede ser más conveniente el uso de uno u otro. Veamos sus diferencias:
 
 ## 1. Método GET
 
 El método GET envía los datos del formulario como parte de la URL. Esto significa que los datos son visibles en la barra de direcciones del navegador. Es útil para búsquedas y cuando se desea que los datos sean accesibles a través de un enlace.
 
-### Pasos para usar GET:
+### Pasos para usar el método GET:
 
 1. Crear un formulario HTML.
-2. Establecer el atributo 
-method
- del formulario a 
-GET
-.
+2. Establecer el **atributo method** del formulario a **GET**.
 3. Incluir los campos de entrada necesarios.
 4. Al enviar el formulario, los datos se adjuntan a la URL.
 
-### Ejemplo de formulario GET:
+### Ejemplo de formulario con el método GET:
 
 ```html
 <!DOCTYPE html>
@@ -27,7 +23,7 @@ GET
     <title>Formulario GET</title>
 </head>
 <body>
-    <form action="procesar_get.php" method="get">
+    <form action="procesar_get.php" method="get"> 
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre">
         <br>
@@ -47,11 +43,7 @@ El método POST envía los datos del formulario en el cuerpo de la solicitud HTT
 ### Pasos para usar POST:
 
 1. Crear un formulario HTML.
-2. Establecer el atributo 
-method
- del formulario a 
-POST
-.
+2. Establecer el **atributo method** del formulario a **POST**.
 3. Incluir los campos de entrada necesarios.
 4. Al enviar el formulario, los datos se envían en el cuerpo de la solicitud.
 
