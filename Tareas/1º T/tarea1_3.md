@@ -97,5 +97,3 @@
     ```bash
     git push origin main
     ```
-
-¡Y eso es todo! Ahora has completado todas las tareas paso a paso en un solo archivo Markdown.
