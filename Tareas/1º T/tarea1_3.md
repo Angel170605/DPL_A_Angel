@@ -5,17 +5,23 @@
 2. Haz clic en **Sign up**.
 3. Sigue las instrucciones para crear tu cuenta.
 
+![1](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea1_3/1.png)
+
 ## 2. Crear un repositorio llamado "banco"
 1. Inicia sesión en tu cuenta de GitHub.
 2. Haz clic en el icono **+** en la esquina superior derecha y selecciona **New repository**.
 3. Nombra el repositorio `banco` y haz clic en **Create repository**.
 
+![2](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea1_3/2.png)
+
 ## 3. Clonar el repositorio desde la línea de comandos
 1. Abre una terminal.
-2. Ejecuta el siguiente comando, reemplazando `<tu-usuario>` con tu nombre de usuario de GitHub:
+2. Ejecuta el siguiente comando, reemplazando `Angel170605` con tu nombre de usuario de GitHub:
     ```bash
-    git clone https://github.com/<tu-usuario>/banco.git
+    git clone https://github.com/Angel170605/banco.git
     ```
+
+![3](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea1_3/3.png)
 
 ## 4. En otra carpeta, crea un proyecto llamado "banco"
 1. Navega a la ubicación donde quieres crear el proyecto:
@@ -32,6 +38,8 @@
     npm init -y
     ```
 
+![4](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea1_3/4.png)
+
 ## 5. Copiar la carpeta del proyecto del banco a la carpeta en la que has clonado el repositorio
 1. Navega a la carpeta donde clonaste el repositorio:
     ```bash
@@ -41,6 +49,8 @@
     ```bash
     cp -r /ruta/a/tu/proyecto/banco/* .
     ```
+
+![5](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea1_3/5.png)
 
 ## 6. Hacer un commit y push desde Visual Studio
 1. Abre Visual Studio Code.
@@ -62,6 +72,8 @@
     git push origin main
     ```
 
+![6](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea1_3/6.png)
+
 ## 7. Borrar del disco duro todo el código del banco
 1. Navega a la carpeta del proyecto:
     ```bash
@@ -72,12 +84,16 @@
     rm -rf banco
     ```
 
+![7](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea1_3/7.png)
+
 ## 8. Clonar el proyecto del banco de GitHub a local
 1. Abre una terminal.
-2. Ejecuta el siguiente comando, reemplazando `<tu-usuario>` con tu nombre de usuario de GitHub:
+2. Ejecuta el siguiente comando:
     ```bash
-    git clone https://github.com/<tu-usuario>/banco.git
+    git clone https://github.com/Angel170605/banco.git
     ```
+
+![8](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea1_3/8.png)
 
 ## 9. Hacer una modificación del código y subirlo a GitHub
 1. Navega a la carpeta del repositorio clonado:
@@ -97,3 +113,5 @@
     ```bash
     git push origin main
     ```
+
+![9](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea1_3/9.png)
