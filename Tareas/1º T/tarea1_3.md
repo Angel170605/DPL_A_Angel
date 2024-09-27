@@ -95,12 +95,12 @@
 ![9](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea1_3/9.png)
 
 ## 9. Hacer una modificación del código y subirlo a GitHub
-1. Navega a la carpeta del repositorio clonado:
+1. Vete a la carpeta del repositorio clonado:
     ```bash
     cd banco
     ```
-2. Abre el archivo que deseas modificar en tu editor de texto favorito y realiza los cambios.
-3. Guarda los cambios y añade los archivos al control de versiones:
+2. Modifica alguno de los archivos.
+3. Guarda los cambios y añade los archivos:
     ```bash
     git add .
     ```
