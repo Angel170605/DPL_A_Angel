@@ -50,8 +50,6 @@ $conn->close();
 
 De esta forma, si escribimos ```http://localhost/insert.php``` en el buscador, se ejecutará el código php y se insertarán los registros en la base de datos.
 
-![4](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea_modificacion_bases_de_datos/4.png)
-
 # 2. MODIFICAR REGISTROS EN BASES DE DATOS
 
 - En el mismo directorio del apartado anterior, creamos el fichero **modify.php** usando ```sudo nano modify.php```
@@ -87,7 +85,6 @@ $conn->close();
 
 De esta forma, si escribimos ```http://localhost/modify.php``` en el buscador, se ejecutará el código php y se modificarán los registros en la base de datos.
 
-![7](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea_modificacion_bases_de_datos/7.png)
 
 # 3. LEER REGISTROS EN BASE DE DATOS
 
@@ -128,8 +125,6 @@ $conn->close();
 
 De esta forma, si escribimos ```http://localhost/read.php``` en el buscador, se ejecutará el código php y se mostrarán los registros en la base de datos.
 
-![10](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea_modificacion_bases_de_datos/10.png)
-
 # 4. ELIMINAR REGISTROS EN BASES DE DATOS
 
 - En el mismo directorio del apartado anterior, creamos el fichero **delete.php** usando ```sudo nano delete.php```
@@ -164,5 +159,3 @@ $conn->close();
 ![12](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea_modificacion_bases_de_datos/12.png)
 
 De esta forma, si escribimos ```http://localhost/modify.php``` en el buscador, se ejecutará el código php y se eliminarán los registros correspondientes en la base de datos.
-
-![13](https://github.com/Angel170605/DPL_A_Angel/blob/main/IMGS/tarea_modificacion_bases_de_datos/13.png)
