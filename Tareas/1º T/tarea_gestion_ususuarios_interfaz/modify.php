@@ -1,6 +1,6 @@
 <?php
 // Crear conexión
-$conn = new mysqli("localhost", "root", "L4fl4M3", "prueba");
+$conn = new mysqli("localhost", "root", "contraseña", "prueba");
 
 // Verificar conexión
 if ($conn->connect_error) {
