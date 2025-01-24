@@ -58,7 +58,7 @@ La arquitectura web se compone de tres capas principales:
 - Abrir un navegador web.
 - Ingresar la dirección:
     ```
-    http://localhost
+    http://localhost:82
     ```
     - Deberías ver la página de inicio de Apache, que indica que el servidor está funcionando correctamente.
 
@@ -81,7 +81,29 @@ La arquitectura web se compone de tres capas principales:
     service apache2 restart
     ```
 
-### 3.5. Instalar el servidor de aplicaciones Tomcat.
+### 3.5. Verificar el estado de Apache después de reiniciar.
+
+- Verificar nuevamente el estado del servicio Apache:
+    ```bash
+    service apache2 status
+    ```
+    - Asegúrate de que Apache esté activo (running). Si no lo está, revisa los logs de error.
+
+### 3.6. Configurar el firewall (si es necesario).
+
+- Si tienes un firewall habilitado, asegúrate de permitir el tráfico en el puerto 82:
+    ```bash
+    sudo ufw allow 82/tcp
+    ```
+
+### 3.7. Revisar los logs de Apache.
+
+- Si Apache no está funcionando, revisa los logs de error para obtener más información:
+    ```bash
+    cat /var/log/apache2/error.log
+    ```
+
+### 3.8. Instalar el servidor de aplicaciones Tomcat.
 
 - Instalar Java (requerido para Tomcat):
     ```bash
@@ -90,5 +112,50 @@ La arquitectura web se compone de tres capas principales:
 - Descargar Tomcat:
     ```bash
     cd /opt
-    wget https://downloads.apache.org/tomcat
+    wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.73/bin/apache-tomcat-9.0.73.tar.gz
+    ```
+- Descomprimir el archivo descargado:
+    ```bash
+    tar -xvzf apache-tomcat-9.0.73.tar.gz
+    ```
+- Renombrar la carpeta de Tomcat para facilitar el acceso:
+    ```bash
+    mv apache-tomcat-9.0.73 tomcat
+    ```
+
+### 3.9. Configurar Tomcat.
+
+- Cambiar al directorio de Tomcat:
+    ```bash
+    cd /opt/tomcat/bin
+    ```
+- Dar permisos de ejecución a los scripts de inicio:
+    ```bash
+    chmod +x startup.sh shutdown.sh
+    ```
+
+### 3.10. Iniciar Tomcat.
+
+- Iniciar el servidor Tomcat:
+    ```bash
+    ./startup.sh
+    ```
+- Comprobar que Tomcat está funcionando abriendo un navegador y accediendo a:
+    ```
+    http://localhost:8080
+    ```
+    - Deberías ver la página de inicio de Tomcat.
+
+### 3.11. Detener Tomcat.
+
+- Para detener Tomcat, puedes usar el siguiente comando:
+    ```bash
+    ./shutdown.sh
+    ```
+
+### 3.12. Revisar los logs de Tomcat.
+
+- Si necesitas revisar los logs de Tomcat, puedes encontrarlos en:
+    ```bash
+    /opt/tomcat/logs
     ```
