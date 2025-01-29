@@ -3,6 +3,7 @@
 ## Requisitos Previos
 
 - Asegúrate de tener Apache instalado y funcionando en tu servidor.
+- Asegúrate de que OpenSSL esté instalado. Puedes verificarlo ejecutando `openssl version`.
 - Acceso a la terminal con privilegios de sudo.
 
 ## Pasos para Instalar un Certificado SSL Autofirmado
@@ -116,4 +117,4 @@
 
 ## Conclusión
 
-Has configurado correctamente un certificado SSL autofirmado en Apache. Esto asegura que las conexiones entre tu servidor y los clientes estén cifradas.
+Has configurado correctamente un certificado SSL autofirmado en Apache. Esto asegura que las conexiones entre tu servidor y los clientes estén cifradas. Recuerda que los certificados autofirmados son adecuados para pruebas y entornos de desarrollo, pero no son recomendables para entornos de producción. Para producción, considera obtener un certificado SSL de una autoridad de certificación (CA) confiable.
